@@ -22,7 +22,7 @@ export default  ()  => {
   const [prizeNumber, setPrizeNumber] = useState(0);
 
   useEffect(()=>{
-    const socket = new WebSocket("ws://axelspin-backend.onrender.com");
+    const socket = new WebSocket("wss://axelspin-backend.onrender.com");
 
     socket.onopen = () =>
     {
